@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -5,11 +11,15 @@ body, html {
   height: 100%;
   overflow: hidden;
   background: #081b2b;
+  font-family: 'Lato', sans-serif;
+	color: #EFF6EE;
 }
 
 main {
-  background-color: rgba(99, 117, 133, 0.8);
+  /* background-color: rgba(99, 117, 133, 0.8); */
   position: absolute;
+  width: 100%;
+  padding: 5% 12%;
 }
 
 canvas {
@@ -19,4 +29,43 @@ canvas {
   left: 0;
   width: 100%;
   height: 100%;
+  /* position: fixed !important;
+    right: 0 !important;
+    left: unset !important; 
+    z-index: 0; */
+}
+
+.article {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 32%;
+}
+
+#projects{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#projects:last-child::after{
+	content: "";
+	width: 32%;
+}
+#projects article{
+	cursor: pointer;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	background-color: rgba(0,0,0,0.5);
+	transition: all .2s;
+	overflow: hidden;
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+}
+#projects article img{
+	width: 100%;
+}
+#projects article h3, #projects article p{
+	padding: 0 30px;
+}
+#projects article:hover{
+	transform: translateY(-10px);
 }
