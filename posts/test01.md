@@ -1,9 +1,10 @@
 ---
-title: Primera prueba Eleventy
+title: Minora wall clock
+brief: LED wall clock
+image: pr1-min.jpg
 tags: posts
-relative_path: '..'
 ---
 
-# Primera prueba Eleventy
+# {{ title }}
 
 probando contenido

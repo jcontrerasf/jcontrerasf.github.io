@@ -8,10 +8,11 @@ layout: layout.html
     {%- for post in collections.posts %}
     <a class="article" href="{{ post.url }}">
     <article>
+      <img src="/imgs/{{ post.data.image }}">
       <h3>{{ post.data.title }}</h3>
+      <p>{{ post.data.brief }}</p>
     </article>
   </a>
-    <!-- <li><a href="{{ post.url }}"></a></li> -->
     {%- endfor %}
 </section>
 
